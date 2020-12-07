@@ -1,0 +1,80 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: ". carla marijn .";
+}
+.carla {
+    grid-area: carla;
+    margin: 10px 0 10px 20px;
+}
+.marijn {
+    grid-area: marijn;
+    margin: 10px 20px 10px 0;
+}
+.carla,
+.marijn {
+    padding: 0;
+    border: solid lightgrey 2px;
+    border-radius: 10px;
+}
+.info {
+    padding: 20px;
+}
+.accountphoto {
+    float: right;
+    margin: 0 4px;
+}
+h1 {
+    color: rgb(66, 63, 63);
+    font-size: 24px;
+    margin: 0 0 5px 0;
+}
+h1 + h2 {
+    color: rgb(179, 175, 175);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px 0 0 0;
+}
+p {
+    font-size: 16px;
+    color: rgb(66, 63, 63);
+}
+.friend {
+    font-weight: 600;
+}
+.btn-group {
+    width: 100%;
+    text-align: center;
+    border-top: solid rgb(236, 234, 234) 1px;
+    margin: auto;
+}
+.button1,
+.button2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px;
+    float: left;
+}
+.button1 {
+    width: 45%;
+    color: green;
+    border: solid green 2px;
+    border-radius: 5px 0 0 5px;
+    margin: 10px 0 10px 20px;
+}
+.button2 {
+    width: 45%;
+    color: red;
+    border: solid red 2px;
+    border-radius: 0 5px 5px 0;
+    margin: 10px auto 18px 0;
+}
+button:first-child {
+    border-right: none;
+}
